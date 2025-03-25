@@ -8,8 +8,8 @@ Usage: #definition
 * experimental = true
 * description = """CZ Imaging Order Header Model to this guide mapping"""
 
-* sourceUri = "https://hl7.cz/fhir/img-order/StructureDefinition/ImagingOrderCz"
-* targetUri = "https://hl7.cz/fhir/img-order/StructureDefinition/cz-composition-imaging"
+//* sourceScopeUri = "https://hl7.cz/fhir/img-order/StructureDefinition/ImagingOrderCz"
+//* targetUri = "https://hl7.cz/fhir/img-order/StructureDefinition/cz-composition-imaging"
 				
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/SubjectCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-patient-base"

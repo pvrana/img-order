@@ -6,4 +6,7 @@ Description: "Health Insurance and Payment Information. This resource represents
 
 * insert SetFmmandStatusRule ( 0, draft )
 
-* identifier 0..*
+* type MS
+* type.coding from $hl7CoverageType
+
+* payor only Reference(CZ_PatientCore or HealthInsuranceProvider or CZ_OrganizationCore)
