@@ -7,10 +7,35 @@ This includes both jurisdictional and cross-border scenarios.
 
 This guide does not describe how to exchange this message.
 
-### Model
+### Included Areas
+
+This document addresses the functional specification of an imaging examination order form, its structure and the coding systems suitable for its creation.
+
+The term Imaging Examination Order refers to a request for an examination defined by one of the modalities listed in the following table. Given the cardinality of 1..* it is possible to request two modalities simultaneously (typically in the case of hybrid methods such as PET/CT - i.e. PT+CT).
+
+| DICOM Modality | Meaning in English           | Czech Interpretation      |
+| -------------- | ---------------------------- | ------------------------- |
+| BMD            | Bone Mineral Densitometry    | Denzitometrie             |
+| CT             | Computed Tomography          | CT                        |
+| DX             | Digital Radiography          | RTG (skiagrafie)          |
+| IO             | Intra-oral Radiography       | Intraorální snímek        |
+| MR             | Magnetic Resonance           | MR                        |
+| MG             | Mammography                  | Mamografie                |
+| NM             | Nuclear Medicine             | Metody nukleární medicíny |
+| PX             | Panoramic X-Ray              | OPG                       |
+| PT             | Positron Emission Tomography | PET                       |
+| RF             | Radiofluoroscopy             | Skiaskopie                |
+| US             | Ultrasound                   | UZ                        |
+| XA             | X-Ray Angiography            | DSA (angiografie)         |
+
+### Excluded Areas
+
+The functional specification does not address the overall ecosystem of order forms and their transmission methods. Additionally, order forms for imaging examinations outside the field of radiology (e.g. keratometry) are not included.
+
+### Information Models
 Basic Sections of the Imaging order
 
-
+TODO: UML
 
 ### Scope
 This document presents ...
