@@ -63,10 +63,10 @@ dependencies:
 pages:
   index.md:
     title: Home
-  guidance.md:
-    title: Guidance
-  actors-and-transactions.md:
-    title: Actors and transactions
+  general-semantics.md:
+    title: General Semantics in National Context
+  use-cases.md:
+    title: Use Cases
   artifacts.xml:
     title: Summary artifacts
 # profiles-and-extensions.md:
@@ -143,8 +143,8 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Guidance: guidance.html
-  Actors and transactions: actors-and-transactions.html
+  Guidance: general-semantics.html
+  Actors and transactions: use-cases.html
   Artifacts:
     Profile artifacts: artifacts.html
   About:
