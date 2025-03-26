@@ -30,7 +30,6 @@ Description: "Clinical document used to represent a Image Order for the scope of
 * ^copyright = "HL7 CZ"
 * . ^short = "Image Order Bundle"
 * . ^definition = "Image Order Bundle. \r\nA container for a collection of resources in the inmaging order document."
-* ^language = #cs
 
 * insert SetFmmandStatusRule ( 0, draft )
 
@@ -60,7 +59,7 @@ Description: "Clinical document used to represent a Image Order for the scope of
 * entry ^slicing.rules = #open
 
 //* entry contains composition 1..1
-//* entry[composition].resource only CompositionImagingOrderCz
+//* entry[composition].resource only CompositionImageOrderCz
 
 * entry contains serviceRequest 0..*
 * entry[serviceRequest].resource only ServiceRequestCz
