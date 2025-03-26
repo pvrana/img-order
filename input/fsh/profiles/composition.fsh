@@ -131,7 +131,7 @@ Description: "Clinical document used to represent a Image Order for the scope of
   * entry[height]
     * ^short = "Height"
     * ^definition = "This entry represents information about subject's height."
-//    * code = http://loinc.org#8302-2
+//    * code = http://loinc.org#3138-5
   * entry[height] only Reference(Observation)  
 
   * entry[condition]
