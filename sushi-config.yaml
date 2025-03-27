@@ -64,9 +64,9 @@ pages:
   index.md:
     title: Home
   general-semantics.md:
-    title: General Semantics in National Context
-  use-cases.md:
-    title: Use Cases
+    title: Introduction
+  functional-view.md:
+    title: Functional view
   artifacts.xml:
     title: Summary artifacts
 # profiles-and-extensions.md:
@@ -143,8 +143,12 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Guidance: general-semantics.html
-  Actors and transactions: use-cases.html
+  Introduction:
+    General Semantics: general-semantics.html
+    Content: general-semantics.html#content
+  Functional view:
+    System Actors: functional-view.html
+    Use Cases: functional-view.html#use-cases
   Artifacts:
     Profile artifacts: artifacts.html
   About:
