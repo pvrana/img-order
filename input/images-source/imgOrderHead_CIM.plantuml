@@ -1,0 +1,62 @@
+@startmindmap
+skinparam topurl StructureDefinition-
+
+* [[ImagingOrderCz.html Imaging Order Header]]
+** Subject
+/'    Shell we keep or not?
+** Preferred Health Professional
+'/
+** Payer
+/' ***_ Health insurance code
+***_ Health insurance name
+***_ Health insurance number '/
+** Coverage
+** Authorship
+***_ Author
+***_ DateTime
+** Attestation
+***_ Attester
+***_ DateTime
+** Legal authentication
+***_ Legal authenticator
+***_ DateTime
+** Document Metadata
+***_ Document ID
+***_ Document type
+***_ Document status
+***_ Document date and time
+***_ Document title
+***_ Order custodian
+***_ Confidentiality
+***_ Language
+***_ Version
+** Digital Signature
+***_ Electronic signature or document seal
+***_ Electronic time stamp
+/' ** Intended recipient
+** Authorship
+***_ Author
+***_ DateTime
+** Attestation
+***_ Attester
+***_ DateTime
+** Legal authentication
+***_ Legal authenticator
+***_ DateTime
+** Document metadata
+***_ Document ID
+***_ Document type
+***_ Document status
+***_ Period
+***_ Report date and time
+***_ Document title
+***_ Event type
+***_ Specialty
+***_ Report custodian
+***_ Document format
+***_ Confidentiality
+***_ Language
+***_ Version
+***_ Study Instance UID
+***_ Accession number '/
+@endmindmap

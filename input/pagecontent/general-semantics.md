@@ -1,6 +1,5 @@
 
-General Semantics in National Context (TODO: bude v nadpise ! ! !)
-In the field of medical imaging, the Digital Imaging and Communications in Medicine (DICOM) protocol and format are standardly used for data archiving and exchange. This defines, for example, individual imaging modalities and is used for data archiving in the Picture Archiving and Communication System (PACS). DICOM is linked to the SNOMED-CT clinical terminology system. Other standards and nomenclatures are shared by imaging methods with other patient documentation documents: ICD-10 (national: MKN-10), HL7, and the like.
+In the field of medical imaging, the Digital Imaging and Communications in Medicine (DICOM) protocol and format are standardly used for data archiving and exchange. This defines, for example, individual imaging modalities and is used for data archiving in the Picture Archiving and Communication System (PACS). DICOM is linked to the SNOMED-CT clinical terminology system. Other standards and nomenclatures are shared by imaging methods with other patient documentation documents: MKN-10 (national representation of international: ICD-10), HL7, and the like.
 
 ### Entities
 
@@ -60,13 +59,13 @@ This required section includes the data elements of the requested examination, a
    - Computed radiography (CR) from a machine with indirect digitalization.
    - DX from a machine with direct digitalization.
 
-        Given the decline of RTG and CR, it can be assumed for order purposes that the requested examination is DX. If the examination is performed with a different X-ray modality, it should not be an issue, as secondary modalities would also be mapped to X-ray/plain films. The mapping of DICOM attributes is handled by the dicom_modality table (TODO: odkaz na tabulku na Home? ! ! ! !).
+        Given the decline of RTG and CR, it can be assumed for order purposes that the requested examination is DX. If the examination is performed with a different X-ray modality, it should not be an issue, as secondary modalities would also be mapped to X-ray/plain films. The mapping of DICOM attributes is handled by the [dicom_modality table](index.html#modality-table).
 
-1) Body Part – A part of the SNOMED CT registry defined by the DICOM standard. The reason is that the complete set of SNOMED CT values contains general body parts (e.g., tendon), which are not useful for imaging examinations. We need to know whether the tendon is on the hand or the foot.
+4) Body Part – A part of the SNOMED CT registry defined by the DICOM standard. The reason is that the complete set of SNOMED CT values contains general body parts (e.g., tendon), which are not useful for imaging examinations. We need to know whether the tendon is on the hand or the foot.
 
-2) Laterality – Unlike the DASTA registry, SNOMED CT/FHIR does not have the concept of "bilaterality," but in the case of examinations of both sides, separate values for the left and right sides should be created.
+5) Laterality – Unlike the DASTA registry, SNOMED CT/FHIR does not have the concept of "bilaterality," but in the case of examinations of both sides, separate values for the left and right sides should be created.
 
-3) Note – Space for a text note related to the examination.
+6) Note – Space for a text note related to the examination.
 
 ##### Examination Appointment (Visit)
 This required section includes confirmed information from the examining Healthcare Facility about the appointment, such as when the patient is scheduled, where they should go, and may include free text comments (e.g., MRI on the 2nd floor of the main building). The use of these structures assumes that, after the examination request is received by the Healthcare Facility, it will be possible to "supplement" or update the order to include this information, thereby creating an updated version of the order form.

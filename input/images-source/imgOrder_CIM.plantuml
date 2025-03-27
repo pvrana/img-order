@@ -1,0 +1,22 @@
+@startmindmap
+skinparam topurl StructureDefinition-
+
+* [[ImagingOrderCz.html Imaging Order]]
+** [[HeaderImagingOrder.html Header]]
+** [[BodyImageOrderCz.html Body]]
+** [[health-insurance-cz.html Health Insurance Provider]]
+** [[serviceRequestCz.html Imaging Order Service Request]]
+***_ Order identifier
+***_ Status of a service order.
+***_ Kind of service request.
+*** [[CoverageCz.html Associated insurance coverage]]
+*** [[specimenCz.html Sample for analysis]]
+****_ External Identifier
+****_ Status
+****_ Type
+****_ Subject
+****_ Received Time (DateTime)
+****_ Collection
+****_ Processing
+****_ Container
+@endmindmap
