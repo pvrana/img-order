@@ -1,29 +1,43 @@
 
-In the field of medical imaging, the Digital Imaging and Communications in Medicine (DICOM) protocol and format are standardly used for data archiving and exchange. This defines, for example, individual imaging modalities and is used for data archiving in the Picture Archiving and Communication System (PACS). DICOM is linked to the SNOMED-CT clinical terminology system. Other standards and nomenclatures are shared by imaging methods with other patient documentation documents: MKN-10 (national representation of international: ICD-10), HL7, and the like.
+In the field of medical imaging, the Digital Imaging and Communications in Medicine (DICOM) protocol and format are standardly used for data archiving and exchange. This defines, for example, individual imaging modalities and is used for data archiving in the Picture Archiving and Communication System (PACS).
 
-### Entities
+DICOM is linked to the SNOMED-CT clinical terminology system. Other standards and nomenclatures are shared by imaging methods with other patient documentation documents: MKN-10 (national representation of international: ICD-10), HL7, and the like.
 
-#### Patient
+### General Semantics
+
+#### Entities
+
+---
+
+**Patient**
+
 Information about the individual receiving healthcare services. This profile defines the structure of the patient, localizing fundamental concepts, including identifiers and terminology, for use in the Czech context.
 
-#### Healthcare Provider
+**Healthcare Provider**
+
 Information about the individual providing healthcare services. The profile identifies the healthcare provider within an organization, and it is possible to assign a role to the person delivering the healthcare service, which can be defined through one of two coding systems: KRZP or SNOMED.
 
-#### Healthcare Service Provider
+**Healthcare Service Provider**
+
 This profile defines the way organizations are represented in the context of the Czech national interoperability project. In this document, it is abbreviated as healthcare facility.
 
-### Objects
+#### Objects
 
-#### Medical Device
+---
+
+**Medical Device**
+
 This profile includes constraints applied to the Device within the context of the Czech national interoperability project. It describes the device in the role of "observer" or "performer." This profile specifies the requirements for the Device used during examinations.
 
-#### Medical Product
+**Medical Product**
+
 This profile presents the requirements for the Device within the context of the Czech national interoperability project. The type of medical product is preferably specified using a SNOMED CT code. The absence of information or the absence of a medical product is explicitly indicated using codes from the following registry: https://fhir.org/guides/stats2/codesystem-hl7.fhir.uv.ips-absent-unknown-uv-ips.html.
 
-#### Components
+**Components**
+
 In the context of this document, a component refers to a part of the data structure that is common to multiple objects. For example, biometric data such as weight and height should be consistently used and defined in both discharge and outpatient reports, as well as in imaging examination order forms.
 
-### Order Sections
+### Content
 
 #### Order Form Header
 
@@ -40,7 +54,7 @@ This mandatory section includes confirmed information from the examining healthc
 #### Body of the Order Form
 
 ##### Clinical Information (Anamnesis)
-This required section includes biometric data (weight and height), other clinically relevant information in free text or optionally with an ICD-10 code (e.g. claustrophobia in an MRI order), medication information (relevant, for example, before a contrast examination on CT), implant information (for MRI), and urgent information (allergies, intolerances, or any other warnings in free text). The urgent information module is a component common to other models. Additional formalized data can help convey any information about the patient (e.g., week of gestation before a gynecological ultrasound examination). Additionally, clinical information should include any patient limitations (e.g. wheelchair-bound, bedridden, blind, hearing impaired).
+This required section includes biometric data (weight and height), other clinically relevant information in free text or optionally with an MKN-10 code (e.g. claustrophobia in an MRI order) or Orphacode, medication information (relevant, for example, before a contrast examination on CT), implant information (for MRI), and urgent information (allergies, intolerances, or any other warnings in free text). The urgent information module is a component common to other models. Additional formalized data can help convey any information about the patient (e.g., week of gestation before a gynecological ultrasound examination). Additionally, clinical information should include any patient limitations (e.g. wheelchair-bound, bedridden, blind, hearing impaired).
 
 ##### Justification for Examination (Reason for Order)
 This required section includes the indicative diagnosis (A.2.2.1), which is required by health insurance companies for service reimbursement. Additional items include the clinical question (an interrogative sentence that should end with a question mark and should be answerable based on the imaging examination) which can also be assigned a SNOMED CT code, and the reason for the order (essentially a brief summary, again with the option to encode the information). The advantage of using a code in the future could be the integration with existing information in the Indicating Physician's system within the NIS (Nursing Information System), thereby eliminating the need to re-enter this information.
@@ -59,7 +73,7 @@ This required section includes the data elements of the requested examination, a
    - Computed radiography (CR) from a machine with indirect digitalization.
    - DX from a machine with direct digitalization.
 
-        Given the decline of RTG and CR, it can be assumed for order purposes that the requested examination is DX. If the examination is performed with a different X-ray modality, it should not be an issue, as secondary modalities would also be mapped to X-ray/plain films. The mapping of DICOM attributes is handled by the [dicom_modality table](index.html#modality-table).
+        > Given the decline of RTG and CR, it can be assumed for order purposes that the requested examination is DX. If the examination is performed with a different X-ray modality, it should not be an issue, as secondary modalities would also be mapped to X-ray/plain films. The mapping of DICOM attributes is handled by the [dicom_modality table](index.html#modality-table).
 
 4) Body Part – A part of the SNOMED CT registry defined by the DICOM standard. The reason is that the complete set of SNOMED CT values contains general body parts (e.g., tendon), which are not useful for imaging examinations. We need to know whether the tendon is on the hand or the foot.
 

@@ -1,6 +1,7 @@
 {% include variable-definitions.md %}
 
-### Introduction 
+### Introduction
+
 This implementation guide is based on [FHIR version R4]. Specify a set of rules that will be used for HL7 FHIR to define how to represent Imaging Order in the Czech national context, in line with European eHN guidelines.
 
 Its main objective is to define the content components and the preferred structure to be used to construct a imaging order.The purpose of this standard is to define the representation of the imaging order as a patient's medical record for the purpose of electronic exchange of health information between individuals, healthcare providers and infrastructure in the Czech Republic. 
@@ -11,6 +12,15 @@ This guide does not describe how to exchange this message.
 
 ### Scope
 
+This guide is divided into several pages which are listed at the top of each page in the menu bar.
+
+- [Home](index.html): This page provides the introduction and scope for this guide.
+- [Guidance](general-semantics.html): This page provides guidance on using the profile defined in this guide. 
+- [Actors-and-transactions](functional-view.html): These page contains information about actors and transactions. 
+- [Artifacts](artifacts.html): This page provides a list of the FHIR artifacts defined as part of this implementation guide.
+- [Artifacts Summary](artifacts.html): These page lists detailed descriptions and formal definitions for all the Czech Imaging Order artifacts and logic model defined in this guide.
+- [Downloads](downloads.html): This page provides links to downloadable artefacts.
+  
 #### Included Areas
 
 This document addresses the functional specification of an imaging examination order form, its structure and the coding systems suitable for its creation.
@@ -37,17 +47,9 @@ The term Imaging Examination Order refers to a request for an examination define
 #### Excluded Areas
 
 The functional specification does not address the overall ecosystem of order forms and their transmission methods. Additionally, order forms for imaging examinations outside the field of radiology (e.g. keratometry) are not included.
-
-This guide is divided into several pages which are listed at the top of each page in the menu bar.
-
-- [Home](index.html): This page provides the introduction and scope for this guide.
-- [Guidance](general-semantics.html): This page provides guidance on using the profile defined in this guide. 
-- [Actors-and-transactions](use-cases.html): These page contains information about actors and transactions. 
-- [Artifacts](artifacts.html): This page provides a list of the FHIR artifacts defined as part of this implementation guide.
-- [Artifacts Summary](artifacts.html): These page lists detailed descriptions and formal definitions for all the Czech Imaging Order artifacts and logic model defined in this guide.
-- [Downloads](downloads.html): This page provides links to downloadable artefacts.
   
 ### Information Models
+
 Basic Sections of the Imaging Order
 
 #### Conceptual view
@@ -55,16 +57,19 @@ Basic Sections of the Imaging Order
 Imaging Order could be divided into several parts: document header and body.
 
 ##### Imaging Order Parts
+
 <figure>
   {% include imgOrder_CIM.svg %}
 </figure>
 
 ##### Imaging Order Header
+
 <figure>
   {% include imgOrderHead_CIM.svg %}
 </figure>
 
 ##### Imaging Order Body
+
 <figure>
   {% include imgOrderBody_CIM.svg %}
 </figure>
