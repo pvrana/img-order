@@ -4,12 +4,13 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.cz.img-order
-canonical: https://hl7.cz/fhir/img-order #!!change here!!
+canonical: https://hl7.cz/fhir/img-order 
 name: HL7CzImagingOrderImplementationGuide
 title: HL7 Czech Imaging Order IG
 description: HL7 Czech Imaging Order Implementation Guide
 status: draft # draft | active | retired | unknown
 version: 0.0.1
+language: cs
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -35,8 +36,8 @@ publisher:
 #     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
 #     version: 1.0.0
 dependencies:
-  hl7.fhir.uv.ips: 1.1.0
   hl7.fhir.cz.core: current
+  hl7.fhir.eu.base.r4: current
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -62,16 +63,16 @@ dependencies:
 pages:
   index.md:
     title: Home
-# general-guidance.md:
-#   title: General Guidance
-# identifiers.md:
-#   title: Identifiers
-# artifacts.xml:
-#   title: Summary artifacts
+  general-semantics.md:
+    title: Introduction
+  functional-view.md:
+    title: Functional view
+  artifacts.xml:
+    title: Summary artifacts
 # profiles-and-extensions.md:
 #   title: Profiles and extensions
-# downloads.md:
-#   title: Download
+  downloads.md:
+    title: Download
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -142,14 +143,16 @@ parameters:  #see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-#  Guidance:
-#    General guidance: general-guidance.html
-#    Identifiers: identifiers.html
-#  Artifacts:
-#    Czech artifacts: artifacts.html
-#    Profiles and extensions: profiles-and-extensions.html
-#  About:
-#    Downloads: downloads.html
+  Introduction:
+    General Semantics: general-semantics.html
+    Content: general-semantics.html#content
+  Functional view:
+    System Actors: functional-view.html
+    Use Cases: functional-view.html#use-cases
+  Artifacts:
+    Profile artifacts: artifacts.html
+  About:
+    Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

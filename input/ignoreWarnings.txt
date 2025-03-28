@@ -1,0 +1,3 @@
+== Suppressed Messages ==
+# test suppressed message 
+WARNING: StructureDefinition​.where(url = 'https:​/​/hl7​.cz​/fhir​/img-order​/StructureDefinition​/BundleImageOrderCz').baseDefinition: There is no example, but we will do it.
