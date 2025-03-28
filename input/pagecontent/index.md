@@ -15,10 +15,9 @@ This guide does not describe how to exchange this message.
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Guidance](general-semantics.html): This page provides guidance on using the profile defined in this guide. 
-- [Actors-and-transactions](functional-view.html): These page contains information about actors and transactions. 
+- [Introduction](general-semantics.html): This page provides guidance on using the profile defined in this guide. 
+- [Functional view](functional-view.html): These page contains information about actors and transactions. 
 - [Artifacts](artifacts.html): This page provides a list of the FHIR artifacts defined as part of this implementation guide.
-- [Artifacts Summary](artifacts.html): These page lists detailed descriptions and formal definitions for all the Czech Imaging Order artifacts and logic model defined in this guide.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts.
   
 #### Included Areas

@@ -2,8 +2,9 @@
 skinparam topurl StructureDefinition-
 
 * [[ImagingOrderCz.html Imaging Order]]
-** [[HeaderImagingOrder.html Header]]
-** [[BodyImageOrderCz.html Body]]
+** [[HeaderImagingOrder.html Imaging Order Header]]
+** [[BodyImageOrderCz.html Imaging Order Body]]
+/'
 ** [[health-insurance-cz.html Health Insurance Provider]]
 ** [[serviceRequestCz.html Imaging Order Service Request]]
 ***_ Order identifier
@@ -19,4 +20,5 @@ skinparam topurl StructureDefinition-
 ****_ Collection
 ****_ Processing
 ****_ Container
+'/
 @endmindmap

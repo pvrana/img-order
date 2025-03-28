@@ -2,16 +2,16 @@
 skinparam topurl StructureDefinition-
 
 * [[ImagingOrderCz.html Imaging Order Header]]
-** Subject
+** Imaging Order Subject
 /'    Shell we keep or not?
 ** Preferred Health Professional
 '/
-** Payer
+** Health Insurance and Payment Information
 /' ***_ Health insurance code
 ***_ Health insurance name
 ***_ Health insurance number '/
-** Coverage
-** Authorship
+** Information about Coverage
+** Imaging Order Authorship
 ***_ Author
 ***_ DateTime
 ** Attestation
