@@ -12,3 +12,4 @@ Description: "Order information for the scope of the Czech national interoperabi
 * patientInstruction
 * insurance only Reference(CoverageCz)
 * reasonReference only Reference(ConditionCz)
+* basedOn only Reference(dataElementsCz)

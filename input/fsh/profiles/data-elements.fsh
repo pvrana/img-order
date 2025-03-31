@@ -1,12 +1,8 @@
-Profile: ServiceRequestCz
+Profile: DataElementsCz
 Parent: ServiceRequest
-Id: serviceRequestCz
-Title: "ServiceRequest: Imaging Order (CZ)"
-Description: "ServiceRequest used to represent a Imaging Order for the scope of the Czech national interoperability project."
-
-// Clarify when to use ServiceRequest and RequestGroup
-* . ^short = "Imaging Order"
-* . ^definition = "Imaging Order composition."
+Id: dataElementsCz
+Title: "Data elements about order: Imaging Order (CZ)"
+Description: "Data elements used to represent a Imaging Order for the scope of the Czech national interoperability project."
 
 * insert SetFmmandStatusRule ( 0, draft )
  

@@ -61,8 +61,14 @@ Description: "Clinical document used to represent a Image Order for the scope of
 * entry contains composition 1..1
 * entry[composition].resource only CompositionImageOrderCz
 
-* entry contains serviceRequest 0..*
-* entry[serviceRequest].resource only ServiceRequestCz
+* entry contains orderInformation 0..*
+* entry[orderInformation].resource only OrderInformationCz
+
+* entry contains dataElements 1..1
+* entry[dataElements].resource only DataElementsCz
+
+* entry contains appointment 0..1
+* entry[appointment].resource only AppointmentCz
 
 * entry contains patient 0..1
 * entry[patient].resource only CZ_PatientCore or CZ_PatientAnimal
@@ -87,6 +93,9 @@ Description: "Clinical document used to represent a Image Order for the scope of
 
 * entry contains condition 0..*
 * entry[condition].resource only ConditionCz
+
+* entry contains allergyIntolerance 0..*
+* entry[allergyIntolerance].resource only AllergyIntolleranceCz
 
 * entry contains attachment 0..*
 * entry[attachment].resource only AttachmentCz
