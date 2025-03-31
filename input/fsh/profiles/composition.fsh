@@ -38,14 +38,6 @@ Description: "Clinical document used to represent a Image Order for the scope of
   * ^short = "Context that defines the Imaging Order"
 //  * insert SetPopulateIfKnown
 
-* attester 0..* MS
-//  * insert SetPopulateIfKnown
-  * ^slicing.discriminator[+].type = #value
-  * ^slicing.discriminator[=].path = "$this.mode"
-  * ^slicing.rules = #open
-  * ^slicing.ordered = false
-
-
 * author MS
 * author only Reference(PractitionerRole or Device)
   * ^short = "Who and/or what authored the composition"

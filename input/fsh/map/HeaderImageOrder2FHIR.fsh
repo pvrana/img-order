@@ -85,66 +85,62 @@ Usage: #definition
 * group[=].element[=].target.code = #PractitionerRole.organization					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent	
-* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/AttesterCz"
+* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/RequestedPerformerCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-practitionerrole-core"					
-* group[=].element[+].code = #Header.attester
-* group[=].element[=].display = "A.1.6 - Attester (multiple attesters could be provided)"
+* group[=].element[+].code = #Header.requestedPerformer
+* group[=].element[=].display = "A.1.6 - Requested Performer"
 * group[=].element[=].target.code = #PractitionerRole
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "where attester.mode = 'professional' AND Composition.attester.party.resolve().ofType(PractitionerRole)"
-* group[=].element[+].code = #Header.attester.identifier
-* group[=].element[=].display = "A.1.6.1 - Attester identifier"
+* group[=].element[=].target.comment = "where requestedPerformer.mode = 'professional' AND Composition.requestedPerformer.party.resolve().ofType(PractitionerRole)"
+* group[=].element[+].code = #Header.requestedPerformer.identifier
+* group[=].element[=].display = "A.1.6.1 - Requested Performer identifier"
 * group[=].element[=].target.code = #PractitionerRole.identifier					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[+].code = #Header.attester.name
-* group[=].element[=].display = "A.1.6.2 - Attester name"
+* group[=].element[+].code = #Header.requestedPerformer.name
+* group[=].element[=].display = "A.1.6.2 - Requested Performer name"
 * group[=].element[=].target.code = #PractitionerRole.practictioner.name					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[+].code = #Header.attester.organizationID
-* group[=].element[=].display = "A.1.6.3 - Attester organisation ID"
+* group[=].element[+].code = #Header.requestedPerformer.organizationID
+* group[=].element[=].display = "A.1.6.3 - Requested Performer organisation ID"
 * group[=].element[=].target.code = #PractitionerRole.organization.identifier					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[+].code = #Header.attester.organization
-* group[=].element[=].display = "A.1.6.4 - Attester organisation"
+* group[=].element[+].code = #Header.requestedPerformer.organization
+* group[=].element[=].display = "A.1.6.4 - Requested Performer organisation"
 * group[=].element[=].target.code = #PractitionerRole.organization					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent	
-* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/LegalAuthenticatorCz"
+* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/AdditionalRecipientCz"
 * group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-practitionerrole-core"				
-* group[=].element[+].code = #Header.legalAuthenticator
-* group[=].element[=].display = "A.1.7 - Legal authenticator (The person taking responsibility for the medical content of the document)"
+* group[=].element[+].code = #Header.additionalRecipient
+* group[=].element[=].display = "A.1.7 - Additional Recipient"
 * group[=].element[=].target.code = #PractitionerRole					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "where attester.mode = 'legal' AND Composition.attester.party.resolve().ofType(PractitionerRole)"
-* group[=].element[+].code = #Header.legalAuthenticator.identifier
-* group[=].element[=].display = "A.1.7.1 - Legal authenticator identifier"
+* group[=].element[=].target.comment = "where additionalRecipient.mode = 'legal' AND Composition.additionalRecipient.party.resolve().ofType(PractitionerRole)"
+* group[=].element[+].code = #Header.additionalRecipient.identifier
+* group[=].element[=].display = "A.1.7.1 - Additional Recipient identifier"
 * group[=].element[=].target.code = #PractitionerRole.identifier					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "where attester.mode = 'legal'"
-* group[=].element[+].code = #Header.legalAuthenticator.name
-* group[=].element[=].display = "A.1.7.2 - Legal authenticator name"
+* group[=].element[+].code = #Header.additionalRecipient.name
+* group[=].element[=].display = "A.1.7.2 - Additional Recipient name"
 * group[=].element[=].target.code = #PractitionerRole.practictioner.name					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "where attester.mode = 'legal'"
-* group[=].element[+].code = #Header.legalAuthenticator.organizationID
-* group[=].element[=].display = "A.1.7.3 - Legal authenticator organisation ID"
+* group[=].element[+].code = #Header.additionalRecipient.organizationID
+* group[=].element[=].display = "A.1.7.3 - Additional Recipient organisation ID"
 * group[=].element[=].target.code = #PractitionerRole.organization.identifier					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "where attester.mode = 'legal'"
-* group[=].element[+].code = #Header.legalAuthenticator.organization
-* group[=].element[=].display = "A.1.7.4 - Legal authenticator organisation"
+* group[=].element[+].code = #Header.additionalRecipient.organization
+* group[=].element[=].display = "A.1.7.4 - Additional Recipient organisation"
 * group[=].element[=].target.code = #PractitionerRole.organization					
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
-* group[=].element[=].target.comment = "where attester.mode = 'legal'"
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/DocumentMetadataCz"
 * group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/BundleImageOrderCz"
 * group[=].element[+].code = #Header.documentMetadata.identifier

@@ -153,38 +153,60 @@ Usage: #definition
 * group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/AllergyIntolleranceCz"
 * group[=].element[+].code = #Body.SupportingInformation.allergyIntolerance
 * group[=].element[=].display = "A.3.1.7.1 - Allergy intolerance"
-* group[=].element[=].target.code = #Composition.extension:basedOn:order			
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance			
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "Composition.section:sectionAllergyIntolerance.entry.ofType(AllergyIntolerance)"
 * group[=].element[+].code = #AllergyIntolerance.identifier
 * group[=].element[=].display = "A.3.1.7.1.1 - Identifier of allergyIntolerance"
-* group[=].element[=].target.code = #Composition.specimen.allergyIntolerance
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance.identifier
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent	
 * group[=].element[+].code = #AllergyIntolerance.clinicalStatus
 * group[=].element[=].display = "A.3.1.7.1.2 - Clinical status of allergyIntolerance"
-* group[=].element[=].target.code = #Composition.specimen.clinicalStatus
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance.clinicalStatus
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #AllergyIntolerance.type
 * group[=].element[=].display = "A.3.1.7.1.3 - Type of allergyIntolerance"
-* group[=].element[=].target.code = #Composition.specimen.type
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance.type
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #AllergyIntolerance.category
 * group[=].element[=].display = "A.3.1.7.1.4 - Category of allergyIntolerance"
-* group[=].element[=].target.code = #Composition.specimen.category
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance.category
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #AllergyIntolerance.code
 * group[=].element[=].display = "A.3.1.7.1.5 - Code of allergyIntolerance"
-* group[=].element[=].target.code = #Composition.specimen.code
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance.code
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[=].element[+].code = #AllergyIntolerance.note
 * group[=].element[=].display = "A.3.1.7.1.5 - Note of allergyIntolerance"
-* group[=].element[=].target.code = #Composition.specimen.note
+* group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance.note
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #equivalent
+* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/ImageSupportingInformationCz"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/MedicationCz"
+* group[=].element[+].code = #Body.SupportingInformation.medication
+* group[=].element[=].display = "A.3.1.5 - Medication"
+* group[=].element[=].target.code = #Composition.extension:basedOn:order			
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #relatedto					
+* group[=].element[=].target.comment = "Composition.section:sectionMedication.entry.ofType(Medication)"
+* group[=].element[+].code = #Medication.identifier
+* group[=].element[=].display = "A.3.1.5.1 - Identifier of medication"
+* group[=].element[=].target.code = #Composition.medication.identifier
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #equivalent	
+* group[=].element[+].code = #Medication.code
+* group[=].element[=].display = "A.3.1.5.2 - Code of Medication"
+* group[=].element[=].target.code = #Composition.medication.code
+* group[=].element[=].target.display = ""
+* group[=].element[=].target.equivalence = #equivalent
+* group[=].element[+].code = #Medication.amount
+* group[=].element[=].display = "A.3.1.5.3 - Amount of Medication"
+* group[=].element[=].target.code = #Composition.medication.amount
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/OrderDataElements"
