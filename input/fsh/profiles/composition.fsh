@@ -77,12 +77,12 @@ Description: "Clinical document used to represent a Image Order for the scope of
   * entry[order]
     * ^short = "Order reference"
     * ^definition = "This entry holds a reference to the order for the Imaging Order."
-  * entry[order] only Reference(OrderInformationCz) 
+  * entry[order] only Reference(ImagingOrderInformationCz) 
 
   * entry[orderReason]
     * ^short = "Order Reason"
     * ^definition = "This entry holds a reference to order reason."
-  * entry[orderReason] only Reference(Condition)
+  * entry[orderReason] only Reference(ConditionImageCz)
 
 ///////////////////////////// SUPPORTING INFORMATION SECTION ////////////////////////////////////
 * section[supportingInformation]
@@ -127,7 +127,7 @@ Description: "Clinical document used to represent a Image Order for the scope of
   * entry[medication]
     * ^short = "Medication"
     * ^definition = "This entry holds a reference to the medication."
-  * entry[medication] only Reference(Medication) 
+  * entry[medication] only Reference(MedicationOrderCz) 
  
   * entry[implants]
     * ^short = "Implants"
@@ -152,7 +152,7 @@ Description: "Clinical document used to represent a Image Order for the scope of
     * insert SliceElement( #profile, $this )
   * entry contains 
       Specimen 0..* MS
-  * entry[Specimen] only Reference(Specimen)
+  * entry[Specimen] only Reference(SpecimenImageCz)
 
 
 //////////////////////////////// SERVICE REQUEST SECTION ////////////////////////////////////////
@@ -161,7 +161,7 @@ Description: "Clinical document used to represent a Image Order for the scope of
   * code = $loinc#64286-8 "Diagnostic imaging order"
   * entry MS
     * insert SliceElement( #profile, $this )
-  * entry only Reference(DataElementsCz)
+  * entry only Reference(DataElementsImageOrderCz)
 
 /////////////////////////////////// COVERAGE SECTION ////////////////////////////////////////////
 * section[coverage]

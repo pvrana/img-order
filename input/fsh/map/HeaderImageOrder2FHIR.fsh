@@ -26,15 +26,15 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #equivalent					
 * group[=].element[=].target.comment = "If treated as one of the Patient identifiers; this applies in some jurisdictions."
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/PayerCz"
-* group[=].target = "https://hl7.cz/fhir/core/StructureDefinition/cz-organization-core"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/HealthInsuranceProvider"
 * group[=].element[+].code = #Header.payer.insuranceCode
 * group[=].element[=].display = "A.1.3.1 - Health insurance code"
-* group[=].element[=].target.code = #Organization.identifier
+* group[=].element[=].target.code = #HealthInsuranceProvider.identifier
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent					
 * group[=].element[+].code = #Header.payer.insuranceName
 * group[=].element[=].display = "A.1.3.2 - Health insurance name"
-* group[=].element[=].target.code = #Organization.name
+* group[=].element[=].target.code = #HealthInsuranceProvider.name
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent	
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/CoverageOrderCz"
@@ -156,7 +156,7 @@ Usage: #definition
 * group[=].element[=].target.equivalence = #equivalent					
 * group[=].element[=].target.comment = "If it is when this particular version of  this order has been assembled into a Bundle."
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/HeaderImagingOrder"
-* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/cz-composition-imaging"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/CompositionImageOrderCz"
 * group[=].element[+].code = #Header.subject
 * group[=].element[=].display = "A.1.1 - Identification and A.1.2 - related contact information of the Patient/subject"
 * group[=].element[=].target.code = #Composition.subject		

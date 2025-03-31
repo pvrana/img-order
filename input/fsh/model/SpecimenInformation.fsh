@@ -1,6 +1,6 @@
 Logical: SpecimenInformationCz				
 Id: SpecimenInformationCz
-Title: "A.2.6 - SpecimenInformation"				
+Title: "A.2.6 - Specimen Information"				
 Description:  """Information about specimen"""
 
 * insert SetFmmandStatusRule( 1, draft)	

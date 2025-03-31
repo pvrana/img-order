@@ -1,6 +1,6 @@
-Profile: MedicationCz
+Profile: MedicationOrderCz
 Parent: Medication
-Id: medicationCz
+Id: MedicationOrderCz
 Title: "Medication: Imaging Order (CZ)"
 Description: "Medication for Imaging Order for the scope of the Czech national interoperability project."
 

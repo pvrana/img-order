@@ -1,6 +1,6 @@
-Profile: OrderInformationCz
+Profile: ImagingOrderInformationCz
 Parent: ServiceRequest
-Id: orderInformationCz
+Id: ImagingOrderInformationCz
 Title: "Order Information: Imaging Order (CZ)"
 Description: "Order information for the scope of the Czech national interoperability project."
 
@@ -11,5 +11,5 @@ Description: "Order information for the scope of the Czech national interoperabi
 * note
 * patientInstruction
 * insurance only Reference(CoverageCz)
-* reasonReference only Reference(ConditionCz)
-* basedOn only Reference(dataElementsCz)
+* reasonReference only Reference(ConditionImageCz)
+* basedOn only Reference(DataElementsImageOrderCz)

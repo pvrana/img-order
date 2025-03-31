@@ -1,6 +1,6 @@
-Profile: DataElementsCz
+Profile: DataElementsImageOrderCz
 Parent: ServiceRequest
-Id: dataElementsCz
+Id: DataElementsImageOrderCz
 Title: "Data elements about order: Imaging Order (CZ)"
 Description: "Data elements used to represent a Imaging Order for the scope of the Czech national interoperability project."
 

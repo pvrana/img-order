@@ -1,5 +1,5 @@
 Logical: ImageSupportingInformationCz
-Id: ImageSupportingInformationImageOrderCz
+Id: ImageSupportingInformationCz
 Title: "A.3.1 - Supporting Information"
 Description: """Supporting Information - Information and data communicated by the imaging methods department that has an impact on the execution of the order or the interpretation of the examination results"""
 

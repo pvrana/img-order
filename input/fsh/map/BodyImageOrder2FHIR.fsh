@@ -9,7 +9,7 @@ Usage: #definition
 * description = """CZ Imaging Order Body Model to this guide mapping"""
 
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/ImageOrderInformationCz"
-* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/OrderInformationCz"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/ImagingOrderInformationCz"
 * group[=].element[+].code = #Body.OrderInformation
 * group[=].element[=].display = "A.2.1 and A.2.2 - Information about order"
 * group[=].element[=].target.code = #Composition.sectionOrderInformation					
@@ -179,7 +179,7 @@ Usage: #definition
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/SpecimenInformationCz"
-* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/SpecimenCz"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/SpecimenImageCz"
 * group[=].element[+].code = #Body.SpecimenInformation
 * group[=].element[=].display = "A.2.6 - Speciment information"
 * group[=].element[=].target.code = #Composition.extension:basedOn:order					
@@ -210,7 +210,7 @@ Usage: #definition
 //* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/SupportingInformationCz"
 
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/ImageSupportingInformationCz"
-* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/AllergyIntolleranceCz"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/AllergyIntoleranceCz"
 * group[=].element[+].code = #Body.SupportingInformation.allergyIntolerance
 * group[=].element[=].display = "A.3.1.7.1 - Allergy intolerance"
 * group[=].element[=].target.code = #Composition.supportingInformation.allergyIntolerance			
@@ -247,7 +247,7 @@ Usage: #definition
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
 * group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/ImageSupportingInformationCz"
-* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/MedicationCz"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/MedicationOrderCz"
 * group[=].element[+].code = #Body.SupportingInformation.medication
 * group[=].element[=].display = "A.3.1.5 - Medication"
 * group[=].element[=].target.code = #Composition.extension:basedOn:order			
@@ -269,14 +269,14 @@ Usage: #definition
 * group[=].element[=].target.code = #Composition.medication.amount
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #equivalent
-* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/OrderDataElements"
-* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/serviceRequestCz"
+* group[+].source = "https://hl7.cz/fhir/img-order/StructureDefinition/OrderDataElementsCz"
+* group[=].target = "https://hl7.cz/fhir/img-order/StructureDefinition/DataElementsImageOrderCz"
 * group[=].element[+].code = #Body.OrderDataElements
 * group[=].element[=].display = "A.3.2 - Order/examination data elements."
 * group[=].element[=].target.code = #Composition.extension:basedOn:order			
 * group[=].element[=].target.display = ""
 * group[=].element[=].target.equivalence = #relatedto					
-* group[=].element[=].target.comment = "Composition.section:sectionOrderInformation.entry.ofType(DataElement)"
+* group[=].element[=].target.comment = "Composition.section:sectionOrderInformation.entry.ofType(DataElementsImageorder)"
 * group[=].element[+].code = #OrderDataElements.code
 * group[=].element[=].display = "A.3.2.1 - Examination code"
 * group[=].element[=].target.code = #Composition.ServiceRequest.code
