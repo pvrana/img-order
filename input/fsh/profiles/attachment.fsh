@@ -1,7 +1,7 @@
 Profile: AttachmentCz
 Parent: Media
 Id: AttachmentCz
-Title: "Attachment Imaging Order (CZ)"
+Title: "Attachment: Imaging Order (CZ)"
 Description: "Czech profile for attachment. "
 
 * . ^short = "Imaging Order"
