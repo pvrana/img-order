@@ -30,9 +30,9 @@ skinparam topurl StructureDefinition-
 ***_ Language
 ***_ Version
 **[#lightgreen] Imaging Order Author
-**[#lightblue] Additional Recipient
-**[#lightblue] Requested Performer
-**[#lightblue] Digital Signature
+**[#lightgreen] Additional Recipient
+**[#lightgreen] Requested Performer
+**[#lightgreen] Digital Signature
 ***_ Electronic Signature or Document Seal
 ***_ Electronic Timestamp
 /' ** Intended recipient

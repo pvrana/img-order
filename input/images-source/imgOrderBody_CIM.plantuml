@@ -25,7 +25,7 @@ end legend
 **[#lightgreen] [[ImageAppointmentCz.html Appointment]]
 **[#lightgreen] [[SpecimenInformationCz.html Specimen Information]]
 **[#lightgreen] [[CoverageBodyCz.html Additional Coverage]]
-**[#lightgreen] [[SupportingInformationImageOrderCz.html Supporting Information]]
+**[#lightblue] [[SupportingInformationImageOrderCz.html Supporting Information]]
 ***_ Biometric Data
 ***_ Weight
 ***_ Height
@@ -37,13 +37,13 @@ end legend
 ***_ Limitation of Patient Mobility
 ***_ Other Relevant Clinical Information
 ***_ Other Information
-**[#lightgreen] [[OrderDataElementsCz.html Order Data]]
+**[#lightblue] [[OrderDataElementsCz.html Order Data]]
 ***_ Examination Code
 ***_ Name of the Examination
 ***_ Modality
 ***_ Body Part
 ***_ Laterality
 ***_ Note
-**[#lightgreen] [[PlannedCareOrdersCz.html Planned Care Orders]]
-**[#lightgreen] [[OtherSupportingInformationCz.html Other Supporting Information]]
+**[#lightblue] [[PlannedCareOrdersCz.html Planned Care Orders]]
+**[#lightblue] [[OtherSupportingInformationCz.html Other Supporting Information]]
 @endmindmap
