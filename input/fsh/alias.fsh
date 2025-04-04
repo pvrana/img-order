@@ -7,5 +7,5 @@ Alias: $sct = http://snomed.info/sct
 Alias: $dicomModalityType = http://terminology.hl7.org/NamingSystem/dicomMDLTY
 
 // Value set
-Alias: $hl7AppointmentStatus = https://hl7.org/fhir/R4/valueset-appointmentstatus.html
+Alias: $hl7AppointmentStatus = https://hl7.org/fhir/R4/valueset-appointmentstatus
 Alias: $sctBodySite = http://hl7.org/fhir/ValueSet/body-site
