@@ -1,6 +1,6 @@
 Logical: AdditionalRecipient
 Id: AdditionalRecipientCz
-Title: "A.1.7 - Additional Recipient (Additional recipients of the finding in addition to the author)"
+Title: "A.1.7 - Additional Recipient"
 Description: """Additional Recipient (Additional recipients of the finding in addition to the author)"""
 
 * insert SetFmmandStatusRule ( 1, draft )
